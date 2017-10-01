@@ -1,0 +1,22 @@
+
+/* navbar 固定在上方 ，故上方需保留空間 */
+body {
+    padding-top: 100px;
+    font-size: 16px;
+}
+
+
+/* navbar 修正跑版 */
+p.navbar-text {
+    margin-top: 13px;
+}
+
+@media (max-width: 767px) {
+    p.navbar-text {
+        margin: 0;
+        padding: 10px 15px;
+    }
+    .navbar li {
+        overflow: hidden;
+    }
+}

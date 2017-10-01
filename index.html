@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- 自訂css -->
+    <link rel="stylesheet" href="CSS/all.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+    <title>CTI-MP</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" width="20" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAB+0lEQVR4AcyYg5LkUBhG+1X2PdZGaW3btm3btm3bHttWrPomd1r/2Jn/VJ02TpxcH4CQ/dsuazWgzbIdrm9dZVd4pBz4zx2igTaFHrhvjneVXNHCSqIlFEjiwMyyyOBilRgGSqLNF1jnwNQdIvAt48C3IlBmHCiLQHC2zoHDu6zG1iXn6+y62ScxY9AODO6w0pvAqf23oSE4joOfH6OxfMoRnoGUm+de8wykbFt6wZtA07QwtNOqKh3ZbS3Wzz2F+1c/QJY0UCJ/J3kXWJfv7VhxCRRV1jGw7XI+gcO7rEFFRvdYxydwcPsVsC0bQdKScngt4iUTD4Fy/8p7PoHzRu1DclwmgmiqgUXjD3oTKHbAt869qdJ7l98jNTEblPTkXMwetpvnftA0LLHb4X8kiY9Kx6Q+W7wJtG0HR7fdrtYz+x7iya0vkEtUULIzCjC21wY+W/GYXusRH5kGytWTLxgEEhePPwhKYb7EK3BQuxWwTBuUkd3X8goUn6fMHLyTT+DCsQdAEXNzSMeVPAJHdF2DmH8poCREp3uwm7HsGq9J9q69iuunX6EgrwQVObjpBt8z6rdPfvE8kiiyhsvHnomrQx6BxYUyYiNS8f75H1w4/ISepDZLoDhNJ9cdNUquhRsv+6EP9oNH7Iff2A9g8h8CLt1gH0Qf9NMQAFnO60BJFQe0AAAAAElFTkSuQmCC"/>
+                </a>
+                <p class="navbar-text">CTI專案維護控管</p>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <p class="navbar-text"><i class="fa fa-user" aria-hidden="true"></i> 王康寶</p>
+                    <!-- <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> 王康寶</a></li> -->
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> 登出</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<!-- 
+    <div class="container">
+        <form data-toggle="validator" role="form">
+            <div class="form-group">
+                <label for="inputName" class="control-label">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+            </div>
+            <div class="form-group has-feedback">
+                <label for="inputTwitter" class="control-label">Twitter</label>
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+                </div>
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <div class="help-block with-errors">Hey look, this one has feedback icons!</div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="control-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid"
+                    required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="control-label">Password</label>
+                <div class="form-inline row">
+                    <div class="form-group col-sm-6">
+                        <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+                        <div class="help-block">Minimum of 6 characters</div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match"
+                            placeholder="Confirm" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div> -->
+
+    <!-- 表單 -->
+    <div class="container">
+
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">問題紀錄</h3>
+            </div>
+            <div class="panel-body">
+
+                <form id="ProblemRecord" class="form-horizontal" data-toggle="validator" role="form">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-lg has-feedback">
+                                <label for="CompanyName" class="col-md-4 control-label">公司名稱:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="CompanyName" placeholder="Company" required>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                    <!-- <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> -->
+                                    <!-- <span id="CompanyName" class="sr-only">(success)</span> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-lg has-feedback">
+                                <label for="ClientName" class="col-md-4 control-label">客戶姓名:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="ClientName" placeholder="Name" required>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                    <!-- <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-lg has-feedback">
+                                <label for="ClientEmail" class="col-md-4 control-label">Email:</label>
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control" id="ClientEmail" placeholder="Email" required>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-lg has-feedback">
+                                <label for="ClientPhone" class="col-md-4 control-label">聯絡電話:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="ClientPhone" placeholder="Phone" required>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-lg">
+
+                                <label class="col-md-2 control-label">作業系統:</label>
+                                <div class="col-md-10">
+
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Win2008
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Win2012
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Linux
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-lg">
+
+                                <label class="col-md-2 control-label">Domino版本:</label>
+                                <div class="col-md-10">
+
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 7
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 8
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 9
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-lg">
+                                <label for="ProblemDescription" class="col-md-2  control-label">問題描述:</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="ProblemDescription" name="textarea" rows="5" placeholder="default text" required></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 text-center">
+                            <div class="col-xs-4 col-xs-offset-2 col-sm-2 col-sm-offset-4">
+                                <button id="submit" name="submit" class="btn btn-primary btn-lg"><i class="fa fa-check" aria-hidden="true"></i> 送出</button>
+                            </div>
+
+                            <div class="col-xs-4 col-sm-2">
+                                <button id="cancel" name="cancel" class="btn btn-primary btn-lg"><i class="fa fa-times" aria-hidden="true"></i> 取消</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- 
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">處理紀錄</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div> -->
+
+
+
+    </div>
+
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+    <!-- <h1>你好，世界！</h1> -->
+
+    </div>
+</body>
+
+</html>
