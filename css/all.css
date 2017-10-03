@@ -8,6 +8,10 @@ body {
 
 /* navbar 修正跑版 */
 
+.navbar-brand {
+    padding-top: 9px;
+}
+
 p.navbar-text {
     margin-top: 13px;
 }
