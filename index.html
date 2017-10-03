@@ -26,6 +26,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
+    <script src="js/all.js"></script>
+
     <title>CTI-MP</title>
 </head>
 
@@ -61,49 +63,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-<!-- 
-    <div class="container">
-        <form data-toggle="validator" role="form">
-            <div class="form-group">
-                <label for="inputName" class="control-label">Name</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
-            </div>
-            <div class="form-group has-feedback">
-                <label for="inputTwitter" class="control-label">Twitter</label>
-                <div class="input-group">
-                    <span class="input-group-addon">@</span>
-                    <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
-                </div>
-                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                <div class="help-block with-errors">Hey look, this one has feedback icons!</div>
-            </div>
-            <div class="form-group">
-                <label for="inputEmail" class="control-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid"
-                    required>
-                <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-                <label for="inputPassword" class="control-label">Password</label>
-                <div class="form-inline row">
-                    <div class="form-group col-sm-6">
-                        <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
-                        <div class="help-block">Minimum of 6 characters</div>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match"
-                            placeholder="Confirm" required>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-            </div>
 
-
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
-    </div> -->
 
     <!-- 表單 -->
     <div class="container">
@@ -115,9 +75,9 @@
             </div>
             <div class="panel-body">
 
-                <form id="ProblemRecord" class="form-horizontal" data-toggle="validator" role="form">
-                    <div class="row">
+                <form id="ProblemRecord" class="form-horizontal" role="form">
 
+                    <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group form-group-lg has-feedback">
                                 <label for="CompanyName" class="col-md-4 control-label">公司名稱:</label>
@@ -125,34 +85,23 @@
                                     <input type="text" class="form-control" id="CompanyName" placeholder="Company" required>
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     <div class="help-block with-errors"></div>
-                                    <!-- <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> -->
-                                    <!-- <span id="CompanyName" class="sr-only">(success)</span> -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-sm-6">
                             <div class="form-group form-group-lg has-feedback">
-                                <label for="ClientName" class="col-md-4 control-label">客戶姓名:</label>
+                                <label for="ClientName" class="col-md-3 control-label">客戶姓名:</label>
                                 <div class="col-md-8">
                                     <input type="text" class="form-control" id="ClientName" placeholder="Name" required>
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     <div class="help-block with-errors"></div>
-                                    <!-- <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span> -->
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-sm-6">
-                            <div class="form-group form-group-lg has-feedback">
-                                <label for="ClientEmail" class="col-md-4 control-label">Email:</label>
-                                <div class="col-md-8">
-                                    <input type="email" class="form-control" id="ClientEmail" placeholder="Email" required>
-                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row">
 
                         <div class="col-sm-6">
                             <div class="form-group form-group-lg has-feedback">
@@ -165,47 +114,42 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12">
-                            <div class="form-group form-group-lg">
-
-                                <label class="col-md-2 control-label">作業系統:</label>
-                                <div class="col-md-10">
-
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Win2008
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Win2012
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Linux
-                                    </label>
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-lg has-feedback">
+                                <label for="ClientEmail" class="col-md-3 control-label">Email:</label>
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control" id="ClientEmail" placeholder="Email" required>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
                                 </div>
-
                             </div>
                         </div>
 
 
+                    </div>
 
-                        <div class="col-sm-12">
-                            <div class="form-group form-group-lg">
+                    <div class="row">
 
-                                <label class="col-md-2 control-label">Domino版本:</label>
-                                <div class="col-md-10">
-
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 7
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 8
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 9
-                                    </label>
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-lg has-feedback">
+                                <label for="ClientEmail" class="col-md-4 control-label">作業系統:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="ClientEmail" placeholder="OS">
                                 </div>
-
                             </div>
                         </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-lg has-feedback">
+                                <label for="ClientPhone" class="col-md-3 control-label">Domino:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="ClientPhone" placeholder="版本">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
 
                         <div class="col-sm-12">
                             <div class="form-group form-group-lg">
@@ -217,27 +161,38 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 text-center">
-                            <div class="col-xs-4 col-xs-offset-2 col-sm-2 col-sm-offset-4">
-                                <button id="submit" name="submit" class="btn btn-primary btn-lg"><i class="fa fa-check" aria-hidden="true"></i> 送出</button>
-                            </div>
+                    </div>
 
-                            <div class="col-xs-4 col-sm-2">
-                                <button id="cancel" name="cancel" class="btn btn-primary btn-lg"><i class="fa fa-times" aria-hidden="true"></i> 取消</button>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-lg">
+                                <label for="attachfile" class="col-md-2  control-label">附件:</label>
+                                <div class="col-md-10">
+                                    <input type="file" id="attachfile" name="attachfile" title="Search for a file to add" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
                             </div>
 
                         </div>
-
                     </div>
+
+
                 </form>
 
-
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <button id="submit" name="submit" class="btn btn-primary btn-lg"><i class="fa fa-check" aria-hidden="true"></i> 送出</button>
+                    </div>
+                </div>
 
             </div>
         </div>
 
 
-        <!-- 
+    </div>
+
+
+    <!-- 
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">處理紀錄</h3>
@@ -249,8 +204,23 @@
 
 
 
-    </div>
 
+    <div class="footer">
+        <p>Copyright 2012. 崇太科技. All Rights Reserved.</p>
+        <p>崇太科技實業有限公司 ChunTai Tech Industrial Co., Ltd</p>
+
+        <ul class="list-inline">
+            <li>
+                <p>台北市10355長安西路180號10樓之1</p>
+            </li>
+            <li>
+                <p>TEL: +886-2-25581229</p>
+            </li>
+            <li>
+                <p>FAX :+886-2-25595546</p>
+            </li>
+        </ul>
+    </div>
     <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
 
     <!-- <h1>你好，世界！</h1> -->
