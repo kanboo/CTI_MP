@@ -1,0 +1,68 @@
+    /* navbar 固定在上方 ，故上方需保留空間 */
+
+    body {
+        padding-top: 70px;
+        font-size: 16px;
+        /* padding-bottom: 100px; */
+    }
+    /* navbar 修正跑版 */
+
+    .navbar-brand {
+        padding-top: 9px;
+        padding-right: 5px;
+    }
+
+    p.navbar-text {
+        margin-top: 13px;
+        margin-left: 0;
+    }
+
+    .panel {
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: 768px) {
+        /* iPad 規格*/
+        .form-horizontal .control-label {
+            /* text-align: left; */
+        }
+    }
+
+    @media (max-width: 767px) {
+        /* 手機 規格*/
+        p.navbar-text {
+            margin: 0;
+            padding: 10px 15px;
+        }
+        .navbar li {
+            overflow: hidden;
+        }
+    }
+
+    .footer {
+        /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+        font-size: 12px;
+        text-align: center;
+        background-color: rgb(223, 223, 223);
+        padding: 10px 0 1px 0;
+        margin-top: 20px;
+    }
+
+    .footer p {
+        line-height: 0.8em;
+    }
+
+    @media (max-width: 767px) {
+        /* 手機 規格*/
+        .footer {
+            padding-bottom: 15px;
+        }
+        .footer .list-inline>li {
+            display: block;
+        }
+        .form-horizontal .radio-inline {
+            padding-top: 0;
+        }
+    }

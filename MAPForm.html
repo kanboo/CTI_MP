@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- 自訂css -->
+    <link rel="stylesheet" href="css/form.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+    <script src="js/form.js"></script>
+
+    <title>CTI-MP</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                <span class="navbar-brand">
+                    <img src="image/CTIlogo.gif" width="30" height="30" alt="CTIlogo">
+                </span>
+                <p class="navbar-text">專案維護控管</p>
+
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <p class="navbar-text"><i class="fa fa-user" aria-hidden="true"></i> 王康寶</p>
+                    <!-- <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> 王康寶</a></li> -->
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> 登出</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- 主要內容 -->
+    <div class="container">
+
+        <!-- 問題提報單 -->
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapseOne" data-toggle="collapse" class="">問題提報單</a>
+                </h4>
+
+            </div>
+
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+
+                    <div id="ProblemRecord" class="form-horizontal">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback">
+                                    <label for="CompanyName" class="col-md-4 control-label">公司名稱:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="CompanyName" placeholder="Company" required>
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback">
+                                    <label for="ClientName" class="col-md-3 control-label">客戶姓名:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="ClientName" placeholder="Name" required>
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback">
+                                    <label for="ClientPhone" class="col-md-4 control-label">聯絡電話:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="ClientPhone" placeholder="Phone" required>
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback">
+                                    <label for="ClientEmail" class="col-md-3 control-label">Email:</label>
+                                    <div class="col-md-8">
+                                        <input type="email" class="form-control" id="ClientEmail" placeholder="Email" required>
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback">
+                                    <label for="ClientEmail" class="col-md-4 control-label">作業系統:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="ClientEmail" placeholder="OS">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback">
+                                    <label for="ClientPhone" class="col-md-3 control-label">Domino:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="ClientPhone" placeholder="版本">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="ProblemDescription" class="col-md-2  control-label">問題描述:</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" id="ProblemDescription" name="textarea" rows="5" placeholder="default text" required></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="attachfile" class="col-md-2  control-label">附件:</label>
+                                    <div class="col-md-10">
+                                        <input type="file" id="attachfile" name="attachfile" title="Search for a file to add" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 問題處理紀錄 -->
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapseTwo" data-toggle="collapse" class="">問題處理紀錄</a>
+                </h4>
+
+            </div>
+
+            <div id="collapseTwo" class="panel-collapse collapse in">
+                <div class="panel-body">
+
+                    <div id="ProcessRecord" class="form-horizontal">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group ">
+
+                                    <label class="col-xs-3 col-sm-2 col-md-2 control-label">維護:</label>
+                                    <div class="col-xs-9 col-sm-10 col-md-10">
+
+                                        <label class="radio-inline">
+                                            <input type="radio" name="MA_RadioOptions" id="inlineRadio1" value="POData" checked> 有PO
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="MA_RadioOptions" id="inlineRadio2" value="FreeData"> 做王八
+                                        </label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapse in" id="POData">
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback">
+                                        <label for="ClientPhone" class="col-md-4 control-label">專案:</label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="ClientPhone" placeholder="上海銀行【幸福加倍】專案" required>
+                                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback">
+                                        <label for="ClientEmail" class="col-md-3 control-label">客戶:</label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="ClientEmail" placeholder="SCSB / 上海商業儲蓄銀行股份有限公司" required>
+                                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="FreeData">
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback">
+                                        <label for="ClientPhone" class="col-md-4 control-label">客戶:</label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="ClientPhone" value="我是澳客，快幫我搞定。" placeholder="我是澳客，快幫我搞定。" required>
+                                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback">
+                                    <label for="ClientPhone" class="col-md-4 control-label">時數:</label>
+                                    <div class="col-md-8">
+                                        <input type="number" class="form-control" id="ClientPhone" placeholder="時數" required>
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback">
+                                    <label for="ClientEmail" class="col-md-3 control-label">處理日:</label>
+                                    <div class="col-md-8">
+                                        <input type="date" class="form-control" id="ClientEmail" value="2017-10-23" placeholder="Date" required>
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="ProblemDescription" class="col-md-2  control-label">說明:</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" id="ProblemDescription" name="textarea" rows="5" placeholder="default text" required></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="attachfile" class="col-md-2  control-label">附件:</label>
+                                    <div class="col-md-10">
+                                        <input type="file" id="attachfile" name="attachfile" title="Search for a file to add" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- 動作列 -->
+        <div class="panel panel-primary">
+            <div class="container">
+                <img src="image/Action.jpg" alt="" style="width:97%">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">處理紀錄</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div> -->
+
+
+
+
+    <div class="footer">
+        <p>Copyright 2012. 崇太科技. All Rights Reserved.</p>
+        <p>崇太科技實業有限公司 ChunTai Tech Industrial Co., Ltd</p>
+
+        <ul class="list-inline">
+            <li>
+                <p>台北市10355長安西路180號10樓之1</p>
+            </li>
+            <li>
+                <p>TEL: +886-2-25581229</p>
+            </li>
+            <li>
+                <p>FAX :+886-2-25595546</p>
+            </li>
+        </ul>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
